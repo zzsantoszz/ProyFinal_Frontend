@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--version de HTML-->
+<html lang="es">
+<!--Identar bien el codigo-->
+
+<head>
+    <!--ahi estan etiquetas de cabecera-->
+    <meta charset="UTF-8">
+    <!--la pagina tendra caracteres especiales-->
+    <meta name="description" content="Descripcion: Somos los mejores XD.">
+    <!--descripcion-->
+    <title>Login</title>
+    <!-- Linearicons -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_login.css">
+    <!--Hoja de estilos  estilo css-->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="encabezado">
+                <div class="logo-sistema">
+                    <figure><img src="img/icono_titulo.png" alt="Ayuda" title="" class="icon-header"></figure>
+                    <p>TicketsMEF</p>
+                </div>
+                <button id="button-ayuda">
+                    <figure><img src="img/pregunta.png" alt="Ayuda" title="" class="icon-header"></figure>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="seccion-logeo">
+                <div class="banner">
+                </div>
+                <div class="form-logeo">
+                    <figure><img src="img/logo.png" width="191.77px" height="39px" alt="" title=""></figure>
+                    <div class="formulario">
+                        <h1>BIENVENIDO</h1>
+                        <form action="pages/pagina_principal_admin.html" method="POST">
+                            <!--no usar metodo GET ya que aparece la info en la url-->
+                            <span class="icon-user"></span>
+                            <input type="text" placeholder="Nombre de usuario" required /><!-- nombre -->
+
+                            <span class="icon-lock"></span>
+                            <input type="password" placeholder="Contraseña" required /><!-- password -->
+                            <!--catpcha-->
+                            <button type="submit">LOGIN</button>
+                            <!-- tiene un evento por defecto enviar la informacion -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="pie-pagina">
+                <p><small>Copyright© 2021 - 2022 <strong>Soporte MEF.</strong> All rights reserved.</small></p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/app1.js"></script>
+
+</body>
+
+</html>

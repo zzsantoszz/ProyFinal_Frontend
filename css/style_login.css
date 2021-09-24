@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+:root {
+    --primary-color: #FF0402;
+    --secondary-color: #232E3E;
+    --terterary-color: #A0A3A8;
+    --quaternary-color: #F5FAFD;
+    --quinary-color: #FBFBFB;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+/*********************
+Generals
+*********************/
+
+* {
+    box-sizing: border-box;
+    /*el ancho queda fijo a pesar del padding*/
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--quinary-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: inherit;
+    line-height: 23px;
+    font-weight: 400;
+    background: url("../img/fondo_sistema.png") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*******************
+Components
+*******************/
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: 1px dashed deeppink;
+}
+
+/*******************
+Style
+*******************/
+
+/*  Header  */
+
+/*imagenes de los iconos del header*/
+
+.icon-header {
+    height: 26px;
+    width: 26px;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-card {
+    height: 62px;
+}
+
+.icon-menu {
+    height: 20px;
+}
+
+.icon-menu a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.logo-sistema {
+    display: flex;
+}
+
+.logo-sistema figure {
+    margin: 0px 5px;
+}
+
+#button-ayuda {
+    background-color: transparent;
+    border: none;
+}
+
+#content-ayuda {
+    width: 360px;
+    height: 252px;
+    /*height: 100vh;*/
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 35px;
+    right: -360px;
+}
+#content-ayuda.active {
+    right: 0;
+}
+/* Form */
+
+.seccion-logeo {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.banner {
+    height: 442px;
+    width: 332px;
+    border-radius: 10px;
+    outline: 1px dashed deeppink;
+    background: url("../img/MEF_sede.png") no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.form-logeo {
+    height: 442px;
+    width: 332px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: 1px dashed deeppink;
+}
+
+.form-logeo figure:nth-child(1) {
+    text-align: right;
+    margin-bottom: 27px;
+}
+
+.formulario h1 {
+    margin-bottom: 23px;
+}
+
+.form {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+form input {
+    height: 45px;
+    width: 292px;
+    border: 1px solid #E6E6E6;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    padding: 13px 0px 12px 55px;
+    margin: 0px 0px 20px 0px;
+}
+
+::placeholder {
+    color: #CECBCB;
+}
+
+form span:nth-child(1), form span:nth-child(3) {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    padding: 13px;
+    background-color: #E6E6E6;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    -webkit-text-stroke: 1px black;
+}
+
+form button {
+    width: 292px;
+    height: 45px;
+    background-color: #3168FF;
+    border: 1px solid #3168FF;
+    border-radius: 6px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form input:hover {
+    opacity: 0.9;
+}
+
+form button:hover {
+    opacity: 0.8;
+    background-color: #020f33;
+    border: 1px solid #020f33;
+}
+
+/* Footer */
+
+.main-footer {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.pie-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    height: 30px;
+}
+
+/*******************
+Media Queries
+*******************/
+
+/* 1024px */
+
+/* 992px */
+
+/* 768px */
+
+/* 640px */
+
+/* 480px */
+
+/* 360px */
+
+/* 320px */
+
+@media screen and (max-width: 640px) {
+    .banner {
+        display: none;
+        /*lo elimina*/
+        /*visibility:hidden;*/
+        /*lo vuelve invisible*/
+    }
+}
