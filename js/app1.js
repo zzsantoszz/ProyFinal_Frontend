@@ -14,4 +14,4 @@ $(document).ready(function () {
   $('#button-ayuda').on('click', function () {
     $('#content-ayuda').toggleClass('active')
   })
-})
+});
