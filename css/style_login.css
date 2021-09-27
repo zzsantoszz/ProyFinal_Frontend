@@ -66,6 +66,10 @@ ul {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*******************
 Components
 *******************/
@@ -76,6 +80,15 @@ Components
     margin: 0 auto;
     padding: 0 10px;
     outline: 1px dashed deeppink;
+}
+
+.main-header {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
 }
 
 /*******************
@@ -108,11 +121,6 @@ Style
     text-decoration: none;
 }
 
-.main-header {
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
-
 .encabezado {
     display: flex;
     align-items: center;
@@ -136,27 +144,28 @@ Style
 #content-ayuda {
     width: 351px;
     height: 252px;
-    /*height: 100vh;*/
     background-color: rgba(51, 122, 183, 0.8);
     position: fixed;
-    top: 45px;
+    top: 35x;
     right: -351px;
 }
 
 #content-ayuda.active {
     right: 0;
 }
+
 /* Form */
 
 .seccion-logeo {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .banner {
-    height: 442px;
-    width: 332px;
+    height: 370px;
+    max-width: 332px;
+    width: 27.66666666666667%;
     border-radius: 10px;
     outline: 1px dashed deeppink;
     background: url("../img/MEF_sede.png") no-repeat center center;
@@ -167,16 +176,20 @@ Style
 }
 
 .form-logeo {
-    height: 442px;
-    width: 332px;
+    height: 370px;
+    max-width: 332px;
+    width: 27.66666666666667%;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     outline: 1px dashed deeppink;
 }
 
-.form-logeo figure:nth-child(1) {
+.form-logeo figure {
     text-align: right;
+}
+
+.form-logeo figure img {
     margin-bottom: 27px;
 }
 
@@ -190,21 +203,27 @@ Style
     flex-wrap: wrap;
 }
 
-form input {
+.imput-form {
+    margin-bottom: 20px;
+}
+
+.imput-form input {
     height: 45px;
-    width: 292px;
+    max-width: 292px;
+    width: 100%;
     border: 1px solid #E6E6E6;
     background-color: var(--white-color);
     border-radius: 6px;
     padding: 13px 0px 12px 55px;
-    margin: 0px 0px 20px 0px;
+    /*margin-right: 50px ;*/
+    /*20px*/
 }
 
 ::placeholder {
     color: #CECBCB;
 }
 
-form span:nth-child(1), form span:nth-child(3) {
+.imput-form span:nth-child(1), .imput-form span:nth-child(2) {
     position: absolute;
     width: 45px;
     height: 45px;
@@ -216,7 +235,8 @@ form span:nth-child(1), form span:nth-child(3) {
 }
 
 form button {
-    width: 292px;
+    max-width: 292px;
+    width: 100%;
     height: 45px;
     background-color: #3168FF;
     border: 1px solid #3168FF;
@@ -270,12 +290,23 @@ Media Queries
 /* 360px */
 
 /* 320px */
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     .banner {
         display: none;
         /*lo elimina*/
         /*visibility:hidden;*/
         /*lo vuelve invisible*/
+    }
+    .form-logeo {
+        width: 100%;
+    }
+    .seccion-logeo {
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .pie-pagina p {
+        font-size: 14px;
     }
 }

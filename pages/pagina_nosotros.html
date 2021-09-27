@@ -11,16 +11,21 @@
     <meta name="description" content="Descripcion: Somos los mejores XD.">
     <!--descripcion-->
     <title>Home - Nosotros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linearicons -->
     <link rel="stylesheet" href="../css/linearicons.css">
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="../css/normalize.css">
+    <!--Estilos Carouzel-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!--Hoja de estilos  estilo css-->
 </head>
 
-<body>  
+<body>
     <header class="main-header">
         <div class="container">
             <div class="encabezado">
@@ -167,9 +172,27 @@
         </section>
         <section>
             <div class="container-2">
-                <div class="container-fondo">
+                <!--<div class="container-fondo">
                     <div class="content-comunicados">
                     </div>
+                </div>-->
+                <div class="container-slider">
+                    <div class="slider" id="slider">
+                        <div class="slider__section">
+                            <img src="../img/img1.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__section">
+                            <img src="../img/img2.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__section">
+                            <img src="../img/img3.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__section">
+                            <img src="../img/img4.png" alt="" class="slider__img">
+                        </div>
+                    </div>
+                    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                    <div class="slider__btn slider__btn--left" id="btn-left">&#62;</div>
                 </div>
             </div>
         </section>
@@ -210,9 +233,54 @@
                             producto y le brindan un excelente servicio, todos los
                             días!</p>
                         <!--galeria de fotos nuestro equipo-->
-                        <div>
 
+                        <div class="body-wrapper">
+                            <div class="wrapper">
+                                <div class="carousel owl-carousel">
+                                    <div class="card">
+                                        <figure><img src="../img/foto01.jpg" alt="" title="">
+                                            <figcaption>
+                                                <p>Antony</p>
+                                                <h3>Soporte Tecnologico</h3>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="card">
+                                        <figure><img src="../img/foto01.jpg" alt="" title="">
+                                            <figcaption>
+                                                <p>Julio</p>
+                                                <h3>Soporte Tecnologico</h3>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="card">
+                                        <figure><img src="../img/foto01.jpg" alt="" title="">
+                                            <figcaption>
+                                                <p>Mario</p>
+                                                <h3>Soporte Tecnologico</h3>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="card">
+                                        <figure><img src="../img/foto01.jpg" alt="" title="">
+                                            <figcaption>
+                                                <p>Jose</p>
+                                                <h3>Soporte Tecnologico</h3>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="card">
+                                        <figure><img src="../img/foto01.jpg" alt="" title="">
+                                            <figcaption>
+                                                <p>Antony</p>
+                                                <h3>Soporte Tecnologico</h3>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -227,9 +295,10 @@
         </div>
     </footer>
 
-   <!-- jQuery -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script type="text/javascript" src="../js/app1.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../js/app1.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
+    <script type="text/javascript" src="../js/carouzel_responsive.js"></script>
 </body>
 
 </html>

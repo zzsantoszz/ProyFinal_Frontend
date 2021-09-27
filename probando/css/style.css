@@ -1,0 +1,82 @@
+/*
+.container-estadistica{
+    width: 1150px;
+    margin: 0 auto;
+    outline: 1px dashed deeppink;
+}*/
+p{
+    margin:0;
+}
+
+.estadistica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 247px;
+    max-width: 1150px;
+    width: 100%;
+    /*background-color: brown;*/
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+    box-shadow: 3px 2px 2px black;
+    padding: 12px 0;
+}
+
+.card-1_estadistica {
+    height: 223px;
+    max-width: 223px;
+    width: 100%;
+    border-radius: 50%;
+    /*background-color: coral;*/
+}
+
+.estadistica .card-1_estadistica:not(:last-child) {
+    margin-right: 20px;
+}
+.card-2-int {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+}
+
+.estadistica .card-1_estadistica:nth-child(1) {
+    border: 8px dashed #097729;
+}
+
+.estadistica .card-1_estadistica:nth-child(2){
+    border: 8px dashed #92920B;
+}
+
+.estadistica .card-1_estadistica:nth-child(3){
+    border: 8px dashed #B40505;
+}
+.estadistica .card-1_estadistica .card-2-int{
+    margin: 2px;
+}
+
+.estadistica .card-1_estadistica:nth-child(1) .card-2-int {
+    border: 15px solid #097729;
+    background-color: #EEFFF1;
+}
+
+.estadistica .card-1_estadistica:nth-child(2) .card-2-int {
+    border: 15px solid #92920B;
+    background-color: #FFFFC9;
+}
+
+.estadistica .card-1_estadistica:nth-child(3) .card-2-int {
+    border: 15px solid #B40505;
+    background-color: #FFF2F2;
+}
+.card-2-int p:nth-child(1) {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.card-2-int p:nth-child(2) {
+    font-weight: 700;
+}
