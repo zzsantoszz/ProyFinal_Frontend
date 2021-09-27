@@ -1,4 +1,4 @@
-$('#displayNone').click(function (e) {
+/*$('#displayNone').click(function (e) {
   // Resetear, por si acaso has estado jugando con la otra propiedad
   $('#hide-me').css('visibility', 'visible');
 
@@ -7,7 +7,27 @@ $('#displayNone').click(function (e) {
   } else {
     $('#hide-me').css('display', 'block');
   }
-});
+});*/
+
+$(document).ready(main);
+var contador = 1;
+function main(){
+  $('#displayNone').click(function(){
+      //$('nav').toogle();
+
+    if(contador == 1){
+      $('#hide-me').animate({
+        left: '0'
+      });
+      contador = 0;
+    }else{
+      contador = 1;
+      $('#hide-me').animate({
+        left: '-100%'
+      });
+    }
+  });
+};
 
 
 $(document).ready(function () {

@@ -130,6 +130,7 @@ section .container {
     height: 939px;
     max-width: 350px;
     width: 40%;
+    left:-100%;
     margin: 0;
     /*outline: 1px dashed deeppink;*/
     position: absolute;
@@ -138,6 +139,7 @@ section .container {
     /*position: fixed;
     top: 0px;
     z-index: 1;*/
+    
 }
 
 .container-2 {
