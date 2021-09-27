@@ -129,7 +129,7 @@ section .container {
 #hide-me {
     height: 939px;
     max-width: 350px;
-    width: 40%;
+    width: 100%;
     left:-100%;
     margin: 0;
     /*outline: 1px dashed deeppink;*/
@@ -138,8 +138,7 @@ section .container {
     top: 45px;
     /*position: fixed;
     top: 0px;
-    z-index: 1;*/
-    
+    z-index: 1;*/   
 }
 
 .container-2 {
@@ -287,9 +286,10 @@ ESTILOS
     outline: 1px dashed deeppink;
 }
 
-.encabezado-menu {
+.encabezado-menu {/*container*/
     height: 45px;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #367FA9;
@@ -309,9 +309,10 @@ ESTILOS
     margin-right: 5px;
 }
 
-.contenido-menu {
+.contenido-menu {/*container*/
     height: 889px;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     padding: 24px 0px 24px;
     padding-bottom: 24px;
     background-color: #222D32;
@@ -346,7 +347,8 @@ ESTILOS
     display: flex;
     border-radius: 3px;
     background-color: #374850;
-    width: 330px;
+    max-width: 330px;
+    width: 94.28571428571429%;
     height: 35px;
     margin: 0px 0px 15px 9px;
     outline: 1px dashed deeppink;
@@ -395,7 +397,7 @@ ESTILOS
 
 .menu-navegacion {
     height: 37px;
-    width: 350px;
+    max-width: 350px;
     background-color: #1A2226;
     padding: 7px 0px 10px 9px;
     color: #4B646F;
@@ -404,7 +406,7 @@ ESTILOS
 
 .menu-navegacion-explorar a {
     height: 44px;
-    width: 350px;
+    max-width: 350px;
     padding-left: 9px;
     padding-right: 11px;
     display: flex;
@@ -852,6 +854,24 @@ Media Queries
 /* 360px */
 
 /* 320px */
+@media screen and (max-width: 1900px) {
+    #hide-me {
+        height: 939px;
+        max-width: 300px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1802px) {
+    #hide-me {
+        height: 939px;
+        max-width: 250px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .card-1_estadistica {
         height: 180px;
@@ -979,6 +999,12 @@ Media Queries
     }
     .estadistica .card-1_estadistica .card-2-int {
         margin: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hide-me {
+        /*iconos*/
     }
 }
 
